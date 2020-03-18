@@ -7,7 +7,7 @@
 
 ## CONTENT
 ### I. Cat Face and Human Face Recognition
-* These are pre-trained models from OpenCV
+* These are pre-trained models from OpenCV.
 
 ### II. Lemon Recognition
 * These are customed models based on Kaggle's Fruit360 dataset.
