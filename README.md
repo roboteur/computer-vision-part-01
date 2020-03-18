@@ -1,4 +1,4 @@
-# Machine Learning / Computer Vision Experiments Part 1
+# Machine Learning / Computer Vision Part 1
 * These are OpenCV (Haar Cascade Algorithm) experiments with the intention to deploy it on the smallest device possible such as Pi Zero W.  
 
 ## SETUP
