@@ -9,19 +9,19 @@
 ### Gray Scale Script >> Both for positives and negatives
 * $ python3 greyscale.py inputfolder outputfolder 
 
-## II. | Auto specify folders and filenames within
+## II. Auto specify folders and filenames within
 $ find ./neg -iname "*.jpg" > negatives.txt
 $ find ./pos -iname "*.jpg" > positives.txt
 
-## III. | Auto specify coordinates / boundaries
+## III. Auto specify coordinates / boundaries
 $ opencv_annotation --annotations=annotations.txt --images=positive 
 
 press c to accept selection
 press n to go next
 press esc to quit
 
-## IV. | Create Postive.Vec 
+## IV. Create Postive.Vec 
 $ opencv_createsamples -info annotations.txt -num 400 -w 32 -h 32 -vec positives.vec
 
-## V. | Train 
+## V. Train 
 $ opencv_traincascade -data model -vec positives.vec -bg negatives.txt -numPos 400 -numNeg 47 -numStages 4 -w 32 -h 32
